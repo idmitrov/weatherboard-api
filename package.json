@@ -1,8 +1,8 @@
 {
-  "name": "weatherboard",
+  "name": "weatherboard-api",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/idmitrov/weatherboard.git",
+  "repository": "https://github.com/idmitrov/weatherboard-api.git",
   "author": "Dimitar <mailto.dimitrov@gmail.com>",
   "license": "MIT",
   "dependencies": {
