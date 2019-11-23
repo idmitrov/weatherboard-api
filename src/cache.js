@@ -3,9 +3,9 @@ const config = require('./config');
 
 module.exports = () => {
   const oneMinute = 1000 * 60;
-  const cacheTime = oneMinute * 10;
+  const cacheTime = oneMinute * 100000;
   const cachedRoutes = {
-    [`${config.API_BASE_URL}/weather`]: cacheTime
+    [`${config.API_BASE_URL}/forecast`]: cacheTime
   };
 
   const options = {
