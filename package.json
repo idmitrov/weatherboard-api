@@ -1,0 +1,18 @@
+{
+  "name": "weatherboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/idmitrov/weatherboard.git",
+  "author": "Dimitar <mailto.dimitrov@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  },
+  "scripts": {
+    "dev": "nodemon"
+  }
+}
