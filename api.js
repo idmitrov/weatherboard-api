@@ -1,4 +1,5 @@
 const Koa = require('koa');
+const router = require('./router');
 
 module.exports = {
 	/**
@@ -9,6 +10,11 @@ module.exports = {
 	 */
   run(port = 5000, host = 'localhost') {
     const api = new Koa();
+    const apiRouter = router();
+
+    api
+      .use(apiRouter.allowedMethods())
+      .use(apiRouter.routes());
 
     api.listen(port, host);
   }
