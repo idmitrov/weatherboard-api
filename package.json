@@ -9,6 +9,7 @@
     "axios": "^0.19.0",
     "dotenv": "^8.2.0",
     "koa": "^2.11.0",
+    "koa-cache-lite": "^3.8.8",
     "koa-router": "^7.4.0"
   },
   "devDependencies": {
