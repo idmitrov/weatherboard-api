@@ -1,5 +1,6 @@
 const Koa = require('koa');
 const router = require('./router');
+const cache = require('./cache');
 
 module.exports = {
 	/**
@@ -13,6 +14,7 @@ module.exports = {
     const apiRouter = router();
 
     api
+      .use(cache().middleware())
       .use(apiRouter.allowedMethods())
       .use(apiRouter.routes());
 
