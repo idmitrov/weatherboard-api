@@ -1,4 +1,5 @@
 const Koa = require('koa');
+const cors = require('@koa/cors');
 const router = require('./router');
 const cache = require('./cache');
 
@@ -26,6 +27,7 @@ module.exports = {
     const apiRouter = router();
 
     api
+      .use(cors())
       .use(cache().middleware())
       .use(httpResponseMiddleware)
       .use(apiRouter.allowedMethods())
