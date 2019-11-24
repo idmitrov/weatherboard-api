@@ -4,6 +4,6 @@ module.exports = {
   getWeekly: async (ctx) => {
     const forecastData = await forecastService.get();
 
-    ctx.response.body = forecastData;
+    ctx.state.data = forecastData;
   }
 };
