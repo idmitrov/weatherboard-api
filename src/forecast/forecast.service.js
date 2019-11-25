@@ -14,7 +14,7 @@ module.exports = {
   get: async (cityId = BG_SOF_CITY_ID, units = 'metric') => {
     const endpoint = `${config.WEATHER_API_URL}?id=${cityId}&units=${units}&APPID=${config.WEAHTER_API_KEY}`;
     const response = await axios.get(endpoint);
-    const data = await response.data;
+    const data = response.data;
 
     return data;
   }
