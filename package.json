@@ -14,9 +14,12 @@
     "koa-router": "^7.4.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.1"
+    "jasmine": "^3.5.0",
+    "nodemon": "^2.0.1",
+    "supertest": "^4.0.2"
   },
   "scripts": {
-    "dev": "nodemon ./src/index"
+    "dev": "nodemon ./src/index",
+    "test": "nodemon node_modules/.bin/jasmine  --config=jasmine.json"
   }
 }

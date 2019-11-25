@@ -22,7 +22,7 @@ module.exports = {
 	 * @param {Number|String} port The port to use (default=5000)
 	 * @param {String} host The host to use (default=localhost)
 	 */
-  run(port = 5000, host = 'localhost') {
+  run(port = 5000, host = 'localhost', done) {
     const api = new Koa();
     const apiRouter = router();
 
@@ -37,6 +37,6 @@ module.exports = {
       console.error(err);
     });
 
-    api.listen(port, host);
+    return api.listen(port, host, done);
   }
 }
