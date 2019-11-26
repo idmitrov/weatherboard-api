@@ -8,7 +8,7 @@ Install all the required packages
 
 ### `env`
 
-Rename .env.example to .env and fill out all the fields
+Copy .env.example and rename the copied file to .env then fill out all the fields in your .env
 
 ### `yarn dev`
 
